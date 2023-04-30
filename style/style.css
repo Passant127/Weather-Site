@@ -1,0 +1,140 @@
+.back {
+    background-color: #1e202b;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(0, 154, 216);
+    border: rgb(0, 154, 216) solid 2px;
+    /* border-radius: 30px; */
+    width: 100px;
+
+}
+
+.navv {
+    transition: 0.3s all;
+    color: white !important;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    margin-left: 50px;
+}
+
+.navv:hover {
+    color: rgb(0, 154, 216);
+    border: rgb(0, 154, 216) solid 2px;
+
+
+}
+
+.hero {
+    background-image: url(../Images/banner.png);
+    background-size: cover;
+    height: 350px;
+}
+
+.find-location input[type="text"],
+.subscribe-form input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+}
+
+.find-location input[type="button"] {
+    height: 50px;
+    top: 55px;
+    right: 55px;
+    bottom: 55px;
+    padding: 0 40px;
+}
+
+.site-footer .subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+
+.button,
+form input[type="submit"],
+form input[type="button"] {
+    border: none;
+    background: #009ad8;
+    border-radius: 30px;
+    color: white;
+}
+
+.forecast {
+    background: #323544;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+    overflow: hidden;
+
+
+}
+
+.backcenter {
+    background: #262936;
+
+}
+
+.forecast .todayforecast .forecastheader,
+.nextforecastheader {
+    width: 100%;
+    border-radius: 2px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    text-align: center;
+    font-weight: 400;
+
+
+
+
+}
+
+.forecast .todayforecast .forecastcontent {
+    padding-top: 20px;
+
+}
+
+.forecastcontent .degree {
+    font-size: 80px;
+    font-weight: 500;
+}
+
+.description {
+    color: #1a80b4;
+}
+
+.site-footer {
+    background-color: #262936;
+    height: 25%vh;
+    font-size: 13px;
+}
+
+
+.ico-circle {
+    float: left;
+    height: 40px;
+    width: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    line-height: 1.4;
+    margin: 0 15px 0 0;
+    box-shadow: 0 0 0 3px #1c1c1d;
+    background-color: #1c1c1d;
+    transition: all 500ms ease;
+    color: #1a80b4;
+    text-align: center;
+}
+
+.ico-circle:hover {
+    background-color: #009ad8;
+    box-shadow: 0 0 0 3px #1a80b4;
+    color: white;
+    border-radius: 50%;
+
+}

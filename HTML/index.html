@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../style/style.css" />
+  <link rel="stylesheet" href="../style/bootstrap.min.css" />
+  <link rel="stylesheet" href="../style/style.css" />
+
+</head>
+
+<body class="back">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container ">
+      <a href="" class="d-flex text-decoration-none ">
+        <img class="w-25 h-50 mt-4" src="../Images/logo@2x.png" alt="">
+        <div class="logo-type m-3 text-center">
+          <h1 class="site-title fs-5 text-white">Weather</h1>
+          <small class="site-description text-white">tagline goes here</small>
+        </div>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  text-center " id="navbarNavAltMarkup">
+        <div class="navbar-nav  ">
+          <a class="nav-link active navv " aria-current="page" href="#">Home</a>
+          <a class="nav-link navv   " href="#">News</a>
+          <a class="nav-link  navv " href="#">Live Cameras</a>
+          <a class="nav-link navv  " href="#">Photos</a>
+          <a class="nav-link  navv " href="#">Contact</a>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="hero">
+    <div class="container">
+      <form class="find-location d-flex justify-content-center p-5  position-relative">
+        <input type="text" placeholder="Find your location..." id="search" class="w-100 ">
+        <input type="button" value="Find" id="submit" class="position-absolute">
+      </form>
+
+    </div>
+
+  </div>
+  <div class="ourtableforecast text-white">
+    <div class="container">
+      <div class="forecast" id="forecast">
+        <div class="d-flex row ">
+          <div class="todayforecast col-lg-4 col-sm-12 pe-0 ps-0">
+            <div class="forecastheader d-flex justify-content-between" id-="today">
+              <div class="day" id="day"></div>
+              <div class="date" id="date"></div>
+
+            </div>
+            <div class="forecastcontent  ms-4 text-white">
+              <div class="location fs-4" id="location"></div>
+              <div class="degree d-flex ">
+                <div class="num d-flex ms-2  ">
+                  <p id="numberofdegree"></p>
+                  <p><sup>o</sup>C</p>
+
+                </div>
+                <div class="icon ms-5 ">
+                  <img id="icon" src="" alt="icon" width="90">
+                </div>
+              </div>
+
+              <div class="condition description ms-3 mb-3" id="condition">
+
+              </div>
+              <div class="icon pb-4">
+                <span id="humidity" class="m-3 "><img src="../Images/icon-umberella.png" alt=""> 20%</span>
+                <span id="wind" class="m-3"><img src="../Images/icon-wind.png" alt="">18km/h</span>
+                <span id="compass" class="m-3"><img src="../Images/icon-compass.png" alt=""> East</span>
+              </div>
+
+            </div>
+
+
+
+
+
+          </div>
+
+          <div class="nextforecast backcenter text-center col-lg-4 col-sm-12 pe-0 ps-0">
+            <div class="nextforecastheader">
+              <div class="nextday" id="nextday"></div>
+            </div>
+            <div class="forecastcontent m-4">
+              <div id="nextdayicon ">
+                <img class="nextdayicon mb-2" src="" alt="" width="50">
+
+              </div>
+              <div class="degreenext">
+                <div class="num fs-2 fw-bold justify-content-center d-flex">
+                  <p class="nextdaydegree"> </p>
+                  <p> <sup>o</sup> C</p>
+                </div>
+              </div>
+              <div class="min mb-4">
+                <small class="mindegree d-inline-block" id="min"><sup>o</sup></small>
+                <sup class=" d-inline-flex">o</sup>
+              </div>
+
+              <div class="nextdaydescription description">
+              </div>
+
+            </div>
+          </div>
+          <div class="nextforecast text-center  col-lg-4 col-sm-12 pe-0 ps-0">
+            <div class="nextforecastheader">
+              <div class="nextday" id="nextday"></div>
+            </div>
+            <div class="forecastcontent m-4">
+              <div id="nextdayicon ">
+                <img class="nextdayicon mb-2" src="" alt="" width="50">
+
+              </div>
+              <div class="degreenext">
+                <div class="num fs-2 fw-bold justify-content-center d-flex">
+                  <p class="nextdaydegree"> </p>
+                  <p> <sup>o</sup> C</p>
+                </div>
+              </div>
+              <div class="min mb-4">
+                <small class="mindegree d-inline-block" id="min"><sup>o</sup></small>
+                <sup class=" d-inline-flex">o</sup>
+              </div>
+
+              <div class="nextdaydescription description">
+              </div>
+
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="site-footer p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <form action="#" class="subscribe-form position-relative">
+            <input type="text" placeholder="Enter your email to subscribe...">
+            <input type="submit" value="Subscribe" class="position-absolute">
+          </form>
+        </div>
+        <div class="col-md-3 col-md-offset-1">
+          <div class="social-links m-3">
+            <a href=""><span class="ico-circle"><ion-icon name="logo-facebook"></ion-icon></span></a>
+            <a href=""><span class="ico-circle"><ion-icon name="logo-instagram"></ion-icon></span></a>
+
+            <a href=""><span class="ico-circle"><ion-icon name="logo-twitter"></ion-icon></span></a>
+            <a href=""><span class="ico-circle"><ion-icon name="logo-pinterest"></ion-icon></span></a>
+
+          </div>
+        </div>
+      </div>
+
+      <p class="colophon text-white m-3">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+
+
+
+
+  <script src="../style/bootstrap.bundle.min.js"></script>
+  <script src="../JS/main.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+
+</html>
